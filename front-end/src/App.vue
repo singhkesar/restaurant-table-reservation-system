@@ -6,7 +6,9 @@ import TheFooter from "@/components/TheFooter.vue";
 <template>
   <div class="wrapper">
     <TheNavbar />
+    
     <main>
+     
       <RouterView v-slot="{ Component }">
         <Transition name="fade" mode="out-in">
           <component :is="Component" :key="$route.name" />
